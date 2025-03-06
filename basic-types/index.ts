@@ -1,13 +1,3 @@
-// https://us02web.zoom.us/j/88945244283?pwd=45F8maonBZSRFiZpk4o1q0aOD7qabH.1
-// e-mail: georgigeorgiev161@gmail.com
-// github account: Georgi07
-// https://github.com/Georgi07/Automation-Testing-App-TP
-
-// npm install typescript --save-dev
-// npm install typescript -g
-// tsc --version / tsc -v
-// ts-node
-
 // let vs const
 let number: number = 5;
 number = 10;
@@ -51,15 +41,18 @@ stringValue = 10 === 10;
 stringValue = [10, 20, 30];
 
 // Ternary operator
-const age: number = 30;
+const isPositiveNum: string =
+  5 > 0 ? "The number is positive" : "The number is negative";
+
+const age: number = 50;
 const myName: string = "Pesho";
 
 const personDescription =
-    age < 40
-        ? `${myName} is younger than 40. He is ${age} years old.`
-        : `${myName} is older than 40. He is ${age} years old.`;
+  age < 40
+    ? `${myName} is younger than 40. He is ${age} years old.`
+    : `${myName} is older than 40. He is ${age} years old.`;
 
-const personName = `His name is "${myName}"`;
+const personName = `His name is "${myName}".`;
 
 //If Else Statement
 
@@ -86,3 +79,14 @@ type PersonInfoType = string | number;
 
 const personNameInf: PersonInfoType = "Ivan";
 const personAgeInf: PersonInfoType = 25;
+
+type Status = "approved" | "rejected" | "pending" | "fullfiled";
+
+const currentStatus: Status = "fullfiled";
+
+type PersonData = {
+  name: string;
+  lastName: string;
+  age: number;
+  city: "Sofia" | "Plovdiv" | "Varna";
+};
