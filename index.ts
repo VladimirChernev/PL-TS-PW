@@ -8,6 +8,8 @@
 // tsc --version / tsc -v
 // ts-node
 
+// >user settings json -> set prettier as default and format on save
+
 // let vs const
 let number: number = 5;
 number = 10;
@@ -55,9 +57,9 @@ const age: number = 30;
 const myName: string = "Pesho";
 
 const personDescription =
-    age < 40
-        ? `${myName} is younger than 40. He is ${age} years old.`
-        : `${myName} is older than 40. He is ${age} years old.`;
+  age < 40
+    ? `${myName} is younger than 40. He is ${age} years old.`
+    : `${myName} is older than 40. He is ${age} years old.`;
 
 const personName = `His name is "${myName}"`;
 
